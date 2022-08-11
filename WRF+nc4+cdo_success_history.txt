@@ -1,0 +1,359 @@
+    1  cat /etc/yum.repos.d/
+    2  sudo dnf check-update
+    3  git
+    4  yum whatprovides git
+    5  dnf groupinstall "Development Too"
+    6  cat /media/
+    8      9  vi /etc/yum.repos.d/local.repo
+   10  yum clean a   11  yum install vsftpd
+   12  yum whatprovides git
+   13  yum install git
+   14  git clone https://github.com/wrf-model/WRF.git
+   15  
+   27  cd WRF
+   28     29  cd /media/
+   30  mv WRF/ /home/praveenkumar/Downloads/
+   31  
+   32  cd /home/praveenkumar/Downloads/
+   33     34  cd WRF/
+   35  
+   36  ./configure 
+   37  yum install perl5
+   38  which perl
+   39  perl --version
+   40  ./configure 
+   41   -lrt
+   42  git clone --recurse-submodule https://github.com/wrf-model/WRF.git
+   43  ./configure 
+   44   -lrt
+   45  yum whatprovides netcdf
+   46  wget https://downloads.unidata.ucar.edu/netcdf-c/4.9.0/netcdf-c-4.9.0.tar.gz
+   47  tar -xzvf netcdf-c-4.9.0.tar.gz 
+   48  cd netcdf-c-4.9.0/
+   49     50  ./configure --prefix=/usr/local/netcdf
+   51  which gcc
+   52  yum install gcc
+   53  ./configure --prefix=/usr/local/netcdf
+   54  yum install m4
+   55  whatis m4
+   56  ./configure --prefix=/usr/local/netcdf
+   57  yum install zlib
+   58  yum install hdf5
+   59  PS
+   60  pwd
+   61  cd ..
+   62     63  cd ..
+   64     65  tar -xzvf hdf5-1.12.2-Std-centos8_64.tar.gz hdf/
+   66  cd hdf/
+   67  
+   68  cat HDF5-1.12.2-Linux.sh 
+   69  62;c62;c62;c62;c62;c62;c62;c62;c62;c62;c62
+   70  ./HDF5-1.12.2-Linux.sh 
+   71  ./configure --prefix=/usr/local/netcdf
+   72  cd ..
+   73     74  updatedb
+   75  locate netcdf
+   76  cd WRF/
+   77  cd netcdf-c-4.9.0/
+   78  ./configure --prefix=/usr/local/netcdf
+   79  cd ..
+   80  cd hdf/
+   81  ./HDF5-1.12.2-Linux.sh 
+   82  rm /home/praveenkumar/Downloads/hdf
+   83  cd /home/praveenkumar/Downloads/hdf
+   84     85  ./HDF5-1.12.2-Linux.sh 
+   86  cd ..
+   87     88  rm -rf hdf
+   89     90  tar -xzvf hdf5-1.12.2-Std-centos8_64.tar.gz 
+   91     92  rm -r hdf
+   93  tar -xzvf hdf5-1.12.1.tar.gz 
+   94  tar -xvf hdf5-1.12.1.tar.gz
+   95  tar -vf hdf5-1.12.1.tar.gz
+   96  tar -zvf hdf5-1.12.1.tar.gz
+   97  gziop
+   98  gzip
+   99  gzip --help
+  100  gzip -d hdf5-1.12.1.tar.gz 
+  101    102  tar -xvf hdf5-1.12.1.tar hdf5-1.12.1/
+  103  cd hdf5-1.12.1/
+  104  ./configure --prefix=/usr/local/hdf5
+  105  cat config.log 
+  106  ./configure --prefix=/usr/local/hdf5
+  107  which cpp
+  108  dpkg
+  109  yum install g++
+  110  which g++
+  111  yum install "g++"
+  112  yum whatprovides g++
+  113  locate g++
+  114  yum groupinstall "Development Too"
+  115  yum install gcc-c++
+  116  ./configure --prefix=/usr/local/hdf5
+  117  locate zlib
+  118  locate libz
+  119  make check insta  120   /usr/local/hdf5/
+  121  cd bin/
+  122    123  cd /home/praveenkumar/Downloads/WRF/netcdf-c-4.9.0/
+  124    125  ./configure --prefix=/usr/local/netcdf --with-hdf5=/usr/local/hdf5
+  126  echo $LDFLAGS
+  127  cat config.log 
+  128  CPPFLAGS=-I/usr/local/hdf5/include
+  129  LDFLAGS=-L/usr/local/hdf5/lib
+  130  ./configure --prefix=/usr/local/netcdf
+  131  cat config.log 
+  132  locate hdf5.h
+  133  updatedb
+  134  locate hdf5.h
+  135  #./configure --prefix=/usr/local/netcdf
+  136  #./configure --prefix=/usr/local/netcdf CPPFLAGS=-I/usr/local/hdf5/include
+  137  #./configure --prefix=/usr/local/netcdf CPPFLAGS=-I/usr/local/hdf5/include LDFLAGS=-L/usr/local/hdf5/lib
+  138  ./configure --prefix=/usr/local/netcdf CPPFLAGS=-I/usr/local/hdf5/include LDFLAGS=-L/usr/local/hdf5/lib
+  139  make
+  140  make insta  141  make check
+  142  history > history vm8.4_netcdf_success.txt
+  143  history > vm8.4_netcdf_success.txt
+  144  cat vm8.4_netcdf_success.txt 
+  145  exit
+  146  grubby
+  147  grubby --update-kernel=ALL -args='video=hyperv_fb:1920x1080"
+  148  quit
+  149  exit
+  150  grubby --update-kernel=ALL -args="video=hyperv_fb:1920x1080"
+  151  grubby --update-kernel=ALL --args="video=hyperv_fb:1920x1080"
+  152  reboo
+  153  reboot
+  154  locate history
+  155  cat /home/praveenkumar/.bash_history 
+  156  history
+  157  yum whatprovides cdo
+  158  yum check
+  159  yum check a  160  yum list a  161  yum install *zsh*
+  162  yum install cdo
+  163  yum install *cdo*
+  164  yum install nco
+  165  /usr/local/netcdf/bin/ncdump
+  166  cd /home/praveenkumar/Downloads/WRF/
+  167    168  cd ..
+  169    170  cd netcdf-fortran-4.5.4/
+  171    172  ./configure
+  173  yum install *fortran*
+  174  which gfortran
+  175  yum install gcc
+  176  yum install *gcc*
+  177  vi /etc/yum.repos.d/redhat.repo 
+  178  vi /etc/yum.repos.d//local.repo 
+  179  gedit /etc/yum.repos.d//local.repo &
+  180  which gfortran
+  181  yum install *gcc*
+  182  yum install *fortran*
+  183  yum install libgfortran
+  184  updatedb
+  185  which gfortran
+  186  locate history
+  187  cat /root/.bash
+  188  cat /root/.bash_history 
+  189  locate *gfortran*
+  190  cd ..
+  191    192  wget https://vault.centos.org/8.5.2111/AppStream/Source/SPackages/gcc-8.5.0-4.el8_5.src.rpm 
+  193  wget --no-check-certificate https://vault.centos.org/8.5.2111/AppStream/Source/SPackages/gcc-8.5.0-4.el8_5.src.rpm 
+  194  curl -O https://vault.centos.org/8.5.2111/AppStream/Source/SPackages/gcc-8.5.0-4.el8_5.src.rpm 
+  195    196  nautilus
+  197  rpm -Uivh gcc-8.5.0-4.el8_5.src.rpm 
+  198  wget https://vault.centos.org/centos/8/AppStream/x86_64/os/Packages/gcc-gfortran-8.5.0-4.el8_5.x86_64.rpm
+  199  wget https://vault.centos.org/8.5.2111/AppStream/Source/SPackages/gcc-8.5.0-4.el8_5.src.rpm
+  200  rpm -ivh gcc-8.5.0-4.el8_5.src.rpm 
+  201  rpm -ivh gcc-gfortran-8.5.0-4.el8_5.x86_64.rpm 
+  202  gcc --version
+  203  wget http://vault.centos.org/8-stream/AppStream/Source/SPackages/gcc-8.4.1-2.1.el8.src.rpm 
+  204  wget http://mirror.centos.org/centos/8-stream/AppStream/x86_64/os/Packages/gcc-gfortran-8.4.1-2.1.el8.x86_64.rpm
+  205  
+  206  rm -f gcc-8.5.0-4.el8_5.src.rpm 
+  207  rm -f gcc-gfortran-8.5.0-4.el8_5.x86_64.rpm
+  208    209  rm -rf hdf5-1.12.1
+  210  mv WRF/netcdf-c-4.9.0.tar.gz .
+  211    212  hdf5
+  213  rm hdf5-1.12.1.tar 
+  214    215  rpm -ivh gcc-gfortran-8.4.1-2.1.el8.x86_64.rpm
+  216  which gcc
+  217  gcc --version
+  218  yum install libquadmath
+  219  yum install *libquadmath*
+  220  rpm -ivh gcc-gfortran-8.4.1-2.1.el8.x86_64.rpm
+  221  wget http://mirror.centos.org/centos/8-stream/AppStream/x86_64/os/Packages/gcc-gfortran-8.4.1-1.el8.x86_64.rpm
+  222    223  rm gcc-gfortran-8.4.1-2.1.el8.x86_64.rpm 
+  224  rpm -ivh gcc-gfortran-8.4.1-1.el8.x86_64.rpm 
+  225  which gfortran
+  226  cd netcdf-fortran-4.5.4/
+  227  ./configure 
+  228  ./configure --prefix=/usr/local/netcdf --with-hdf5=/usr/local/hdf5 CPPFLAGS=-I/usr/local/hdf5/include LDFLAGS=-L/usr/local/hdf5/lib
+  229  ./configure --prefix=/usr/local/netcdf CPPFLAGS=-I/usr/local/hdf5/include LDFLAGS=-L/usr/local/hdf5/lib
+  230  locate netcdf.h
+  231  ./configure --prefix=/usr/local/netcdf CPPFLAGS=-I/usr/local/netcdf/include LDFLAGS=-L/usr/local/netcdf/lib
+  232  LD_LIBRARY_PATH=$LIB_NETCDF:$LD_LIBRARY_PATH
+  233  LIB_NETCDF=/usr/local/netcdf/lib
+  234  LD_LIBRARY_PATH=$LIB_NETCDF:$LD_LIBRARY_PATH
+  235  ./configure --prefix=/usr/local/netcdf CPPFLAGS=-I/usr/local/netcdf/include LDFLAGS=-L/usr/local/netcdf/lib
+  236  ./configure CPPFLAGS=-I/usr/local/netcdf/include LDFLAGS=-L/usr/local/netcdf/lib
+  237  NCDIR=/usr/local/netcdf
+  238  NFDIR=/usr/local/netcdf
+  239  ./configure CPPFLAGS=-I/usr/local/netcdf/include LDFLAGS=-L/usr/local/netcdf/lib
+  240    241  cd ..
+  242    243  tar -xzvf netcdf-c-4.9.0.tar.gz 
+  244  cd netcdf-c-4.9.0/
+  245    246  ./configure --
+  247  echo $INCLUDE
+  248  cd ..
+  249    250  history > history_till gfortran.txt
+  251  history > history_tillgfortran.txt
+  252  gedit history_tillgfortran.txt &
+  253  cd /home/praveenkumar/Downloads/
+  254    255  rm history_ti  256  gedit history_tillgfortran.txt &
+  257  which ncdum[
+  258  which ncdump
+  259  cd netcdf-c-4.9.0/
+  260  ./configure --with-hdf5=/usr/local/hdf5
+  261  ./configure CPPFLAGS=-I/usr/local/hdf5/include LDFLAGS=-L/usr/local/hdf5/lib
+  262  make
+  263  make check
+  264  make insta  265  cd ..
+  266    267  cd netcdf-fortran-4.5.4/
+  268    269  ./configure CPPFLAGS=-I/usr/local/hdf5/include LDFLAGS=-L/usr/local/hdf5/lib
+  270  updatedb
+  271  ./configure CPPFLAGS=-I/usr/local/hdf5/include LDFLAGS=-L/usr/local/hdf5/lib
+  272  cd ..
+  273    274  cd netcdf-fortran-4.5.4/
+  275  tail config.log 
+  276  gedit config.log &
+  277  gcc
+  278  gcc -V
+  279  yum list a  280  yum whatprovides cdo
+  281  yum install cdo
+  282  locate nco
+  283  cd ..
+  284    285  cd /home/praveenkumar/Downloads/
+  286    287  mv /root/Downloads/cdo-2.0.5.tar.gz .
+  288    289  tar -xzvf cdo-2.0.5.tar.gz 
+  290  cd cdo-2.0.5/
+  291    292  ./configure --prefix=/usr/local/cdo
+  293  make
+  294  make insta  295  cdo
+  296  updatedb
+  297  cdo
+  298  cd /usr/local/cdo/bin/
+  299    300  ./cdo
+  301  pwd
+  302  cd ..
+  303  cd /home/praveenkumar/Downloads/
+  304    305  cd /root/Downloads/
+  306    307  /usr/local/bin/cdo 
+  308  ncdump -h gpm120006.nc 
+  309  ncdump -h gpm120612.nc 
+  310  /usr/local/bin/cdo
+  311  /usr/local/cdo/bin/cdo 
+  312  /usr/local/cdo/bin/cdo merge
+  313  /usr/local/cdo/bin/cdo merge gpm120006.nc gpm120612.nc 
+  314  /usr/local/cdo/bin/cdo merge gpm120006.nc gpm120612.nc combined.nc
+  315    316  mv netcdf-fortran-4.6.0.tar.gz /home/praveenkumar/Downloads/
+  317  cd /home/praveenkumar/Downloads/
+  318    319  tar -xzvf netcdf-fortran-4.6.0.tar.gz 
+  320  cd netcdf-fortran-4.6.0/
+  321    322  ./configure 
+  323  export NCDIR=/usr/local
+  324  which ncdump
+  325  export NFDIR=/usr/local
+  326  export CPPFLAGS=$CPPFLAGS"-I${NCDIR}/include
+  327  export CPPFLAGS=$CPPFLAGS"-I${NCDIR}/include"
+  328  export LDFLAGS=$LDFLAGS"-L${NCDIR}/lib"
+  329  export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:${NCDIR}/lib
+  330  export LIBS=$LIBS" -lnetcdf"
+  331  ./configure 
+  332  make check
+  333  make insta  334  cd /root/Downloads/
+  335  /usr/local/cdo/bin/cdo merge gpm120006.nc gpm120612.nc combined.nc
+  336  updatedb
+  337  cd /home/praveenkumar/Downloads/
+  338    339  cd cdo-2.0.5/
+  340  ./configure
+  341  make
+  342  make insta  343  /usr/local/cdo/bin/cdo merge gpm120006.nc gpm120612.nc combined.nc
+  344  cd /root/Downloads/
+  345  /usr/local/cdo/bin/cdo merge gpm120006.nc gpm120612.nc combined.nc
+  346  cd /usr/local/
+  347  rm -fr cdo/
+  348  locate cdo
+  349  cdo
+  350  cdo merge gpm120006.nc gpm120612.nc combined.nc
+  351  cd /root/Downloads/
+  352  cdo merge gpm120006.nc gpm120612.nc combined.nc
+  353  cd /home/praveenkumar/Downloads/
+  354  kk
+  355    356  cd cdo-2.0.5/
+  357  ./configure --prefix=/usr/local/cdowithnc4 --with-netcdf=/usr/local
+  358  make
+  359  make insta  360  cd /root/Downloads/
+  361  /usr/local/cdowithnc4/cdo merge gpm120006.nc gpm120612.nc combined.nc
+  362  /usr/local/cdowithnc4/bin/cdo merge gpm120006.nc gpm120612.nc combined.nc
+  363  ncdump combined.nc 
+  364  ncdump -h combined.nc 
+  365  cdo merge
+  366  tar -xzvf grads-2.2.1-src.tar.gz ./grads-2.2.1/
+  367  cd grads-2.2.1/
+  368    369  ./configure 
+  370  ./configure --prefix=/usr/local/grads
+  371  make
+  372  cat config.log 
+  373  gedit config.log 
+  374  cd /home/praveenkumar/
+  375  history > netcdf+cdo_success.txt
+  376  which ncdump
+  377  cd Downloads/WRF/
+  378  ./configure 
+  379  cat configure.wrf 
+  380  cat configure.wrf | grep netcdf
+  381  cat configure.wrf | grep -i netcdf
+  382  NETCDFPATH=/usr/local
+  383  ./configure NETCDFPATH=/usr/local
+  384  ./configure
+  385  cd ..
+  386    387  rm -fr /usr/local/netcdf/
+  388  ./configure
+  389  cd WRF
+  390  ./configure
+  391    392  cat README
+  393  NETCDF=/usr/local
+  394  ./configure
+  395  cat README | grep netcdf
+  396  cat README.md
+  397  csh
+  398  yum install csh
+  399  clean -a
+  400  ./configure 
+  401  export NETCDF=/usr/local
+  402  ./configure 
+  403  make
+  404  export NETCDF_classic=1
+  405  ./configure 
+  406  ./compile
+  407  make
+  408  ./compile
+  409  yum install *csh*
+  410  ./compile
+  411  ./compile em_real
+  412  yum install *mpi*
+  413  cd ..
+  414    415  mv /root/Downloads/mpich-4.0.2.tar.gz .
+  416  tar -xzvf mpich-4.0.2.tar.gz 
+  417  cd mpich-4.0.2/
+  418    419  ./configure 
+  420  make
+  421  make insta  422  mpic
+  423  mpicc
+  424  cd ..
+  425  cd WRF
+  426  ./configure
+  427  ./compile em_real
+  428  locate real.exe
+  429  updatedb
+  430  locate real.exe
+  431  cd ..
+  432    433  history > WRF_success.txt
